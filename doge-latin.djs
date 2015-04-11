@@ -13,17 +13,21 @@ loud
 console dose loge with 'Welcome to Doge-Latin'
 console dose loge with ' '
 
+shh split text on spaces to get array of words
 very words is text dose split with ' '
 
 console dose loge with words
 
+shh move first letter to end of word
+very i is 0
+very len is words.length
+very newText
+much i=0; i<len; i more 1
+    very w is words[i]
+    very firstLetter is w dose substring with 1
+    very remainder is w dose substring with 0 1
+    very newWord is firstLetter + remainder
+    words[i] is newWord
+wow
 
-very str is 'hello'
-console dose loge with str
-
-very a is str dose substring with 1
-very b is str dose substring with 0 1
-
-very newString is a + b
-
-console dose loge with newString
+console dose loge with words
